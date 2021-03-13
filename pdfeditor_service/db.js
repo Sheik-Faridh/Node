@@ -10,16 +10,6 @@ const config = {
     useFindAndModify: false
 };
 
-// MongoDB Atlas
-// dbname -pdfeditor
-// mongodb+srv://editor:<password>@cluster0.e53zz.mongodb.net/<dbname>?retryWrites=true&w=majority
-// username - editor
-// password- xBzk7m4fRym3P4vp
-
-// mongodb+srv://editor:aq41o0Qa1VsxyGg8@pdfcluster.mystc.mongodb.net/pdfeditordb
-// username - editor
-// new password - aq41o0Qa1VsxyGg8
-
 mongoose.connect("mongodb+srv://pdfcluster.mystc.mongodb.net",config).then(() => console.log("MongoDB connected successfully"))
 
 mongoose.connection.on("error", err => console.log("Mongoose Connection Error",err.message))
